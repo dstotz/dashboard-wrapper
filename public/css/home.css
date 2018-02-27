@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #101214;
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+}
+
+span {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.hidden {
+  display: none;
+}
+
+.header-bar {
+  height: 50px;
+  padding-left: 5px;
+}
+
+.dashboard-iframe-div {
+  width: 1940px;
+  height: 1900px;
+  overflow: hidden;
+}
+
+.dashboard-button {
+  height: 40px;
+  width: 230px;
+  margin: 5px;
+  border: none;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #2a2a2a 50%, #1f1f1f 50%);
+  transition: all ease 136.0s;
+}
+
+.active-text {
+  transition: all ease 0.8s;
+  color: #e0e0e0;
+}
+
+.inactive-text {
+  transition: all ease 0.8s;
+  color: #666666;
+}
+
+.dashboard-button.active-button {
+  background-position: -100% 0;
+}
+
+.dashboard-button.inactive-button {
+  transition: all ease 0s;
+  background: #1f1f1f;
+}
+
+.dashboard-button.inactive-button.paused-button {
+  transition: all ease 0s;
+  background: #1f1f1f;
+}
+
+.dashboard-button.active-button.paused-button {
+  transition: all ease 0s;
+  background: #2a2a2a;
+}
+
+#sr-logo {
+  position: absolute;
+  top: 5px;
+  left: 46%;
+  height: 40px;
+  width: auto;
+}
+
+#pause-icon {
+  color: #e0e0e0;
+  letter-spacing: -10px;
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+}
